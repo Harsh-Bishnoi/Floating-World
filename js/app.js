@@ -29,6 +29,49 @@ function toggleAccordion(button) {
 }
 
 
+$('.slider').slick({
+    infinite: true,
+    slidesToShow: 7,
+    autoplay: true,
+    autoplaySpeed: 1,
+    speed: 4000,
+    slidesToScroll: 4,
+    cssEase: 'linear',
+    responsive: [
+        {
+            breakpoint: 1100,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 920,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 685,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+            }
+        },
+        {
+            breakpoint: 510,
+            settings: {
+                slidesToShow: 1.8,
+                slidesToScroll: 1.8,
+            }
+        }
+    ]
+});
+
+
 $('.img-slider').slick({
     centerMode: true,
     centerPadding: '60px',
