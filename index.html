@@ -6,8 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Floating World</title>
+    <!-- css link -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- favicon -->
     <link rel="shortcut icon" href="./assets/images/svg/logo.svg" type="image/x-icon">
+
+    <!-- slider link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
 </head>
 
 <body>
@@ -16,39 +29,65 @@
         <a href="#"><img src="./assets/images/svg/logo.svg" alt="logo"></a>
         <a class="font-bold text-[22px] leading-[100%] text-center text-black" href="#">Floating World</a>
     </div>
-    <!-- Scale & grow -->
-    <section
-        class="flex justify-center items-center bg-[#00AFE1] py-[40px] sm:py-[80px] md:pt-[134px] md:pb-[127px] relative">
-        <img class="absolute right-0 top-[230px] hidden xl:block xl:max-w-[442px]"
-            src="./assets/images/svg/curl-line.svg" alt="curl-line">
-        <img class="absolute left-0 top-[230px] hidden xl:block" src="./assets/images/svg/half-circle.svg"
-            alt="half-circle">
-        <img class="absolute hidden md:block left-[20px] lg:left-[50px] xl:left-[120px] md:top-[40px] lg:top-[116px] max-w-[100px] md:max-w-[130px] lg:max-w-[171px]"
-            src="./assets/images/svg/white-line-circle.svg" alt="white-line-circle">
-        <div class="container px-[12px] max-w-[1380px]">
-            <div class="flex justify-center pb-[13px]">
-                <h1
-                    class="font-bold text-[48px] sm:text-[60px] md:text-[100px] leading-[55px] sm:leading-[60px] md:leading-[104px] text-center max-w-[610px] text-white">
-                    Scale & grow
-                    with ease</h1>
+    <!-- Latest  Projects slider -->
+    <!-- <section class="latest-slider flex justify-center items-center overflow-hidden">
+        <div class="img-slider w-full">
+            <div class="relative cursor-pointer group overflow-hidden">
+                <img class="rounded-[24px]" src="./assets/images/png/app-section-img-1.png" alt="app-section-img-1">
+                <div
+                    class="w-full rounded-b-[24px] bg-[#00000080] pl-[36px] py-[18px] md:pt-[24px] md:pb-[35px] absolute -bottom-1/2 group-hover:bottom-0 duration-300 ease-linear">
+                    <h4 class="font-bold text-[20px] md:text-[22px] leading-[100%] text-white pb-[6px]">Project
+                        Name</h4>
+                    <p class="font-medium text-[16px] md:text-[18px] leading-[100%] text-white">Launch Date</p>
+                </div>
             </div>
-            <div class="flex justify-center pb-[25px] md:pb-[40px]">
-                <p
-                    class="font-medium text-[20px] sm:text-[26px] leading-[normal] sm:leading-[100%] text-white text-center">
-                    Monthly web maintenance
-                    packages for businesses. Cancel anytime</p>
+            <div class="relative cursor-pointer group overflow-hidden">
+                <img class="rounded-[24px]" src="./assets/images/png/app-section-img-2.png" alt="app-section-img-1">
+                <div
+                    class="w-full rounded-b-[24px] bg-[#00000080] pl-[36px] py-[18px] md:pt-[24px] md:pb-[35px] absolute -bottom-1/2 group-hover:bottom-0 duration-300 ease-linear">
+                    <h4 class="font-bold text-[20px] md:text-[22px] leading-[100%] text-white pb-[6px]">Project
+                        Name</h4>
+                    <p class="font-medium text-[16px] md:text-[18px] leading-[100%] text-white">Launch Date</p>
+                </div>
             </div>
-            <div class="flex justify-center">
-                <button
-                    class="font-semibold text-[20px] leading-[100%] text-center text-white border border-black cursor-pointer px-[49px] py-[21.5px] rounded-[14px] bg-gradient-to-b from-[#000000] to-[#393939] hover:from-white hover:to-white hover:text-black">See
-                    Plans</button>
+            <div class="relative cursor-pointer group overflow-hidden">
+                <img class="rounded-[24px]" src="./assets/images/png/app-section-img-3.png" alt="app-section-img-1">
+                <div
+                    class="w-full rounded-b-[24px] bg-[#00000080] pl-[36px] py-[18px] md:pt-[24px] md:pb-[35px] absolute -bottom-1/2 group-hover:bottom-0 duration-300 ease-linear">
+                    <h4 class="font-bold text-[20px] md:text-[22px] leading-[100%] text-white pb-[6px]">Project
+                        Name</h4>
+                    <p class="font-medium text-[16px] md:text-[18px] leading-[100%] text-white">Launch Date</p>
+                </div>
             </div>
-            <div class="flex gap-[13px] items-center justify-center pt-[21px]">
-                <div class="w-[12px] h-[12px] bg-[#FF0000] rounded-full"></div>
-                <p class="font-medium text-[12px] leading-[100%] text-center">Available now</p>
+            <div class="relative cursor-pointer group overflow-hidden">
+                <img class="rounded-[24px]" src="./assets/images/png/app-section-img-4.png" alt="app-section-img-1">
+                <div
+                    class="w-full rounded-b-[24px] bg-[#00000080] pl-[36px] py-[18px] md:pt-[24px] md:pb-[35px] absolute -bottom-1/2 group-hover:bottom-0 duration-300 ease-linear">
+                    <h4 class="font-bold text-[20px] md:text-[22px] leading-[100%] text-white pb-[6px]">Project
+                        Name</h4>
+                    <p class="font-medium text-[16px] md:text-[18px] leading-[100%] text-white">Launch Date</p>
+                </div>
+            </div>
+            <div class="relative cursor-pointer group overflow-hidden">
+                <img class="rounded-[24px]" src="./assets/images/png/app-section-img-5.png" alt="app-section-img-1">
+                <div
+                    class="w-full rounded-b-[24px] bg-[#00000080] pl-[36px] py-[18px] md:pt-[24px] md:pb-[35px] absolute -bottom-1/2 group-hover:bottom-0 duration-300 ease-linear">
+                    <h4 class="font-bold text-[20px] md:text-[22px] leading-[100%] text-white pb-[6px]">Project
+                        Name</h4>
+                    <p class="font-medium text-[16px] md:text-[18px] leading-[100%] text-white">Launch Date</p>
+                </div>
+            </div>
+            <div class="relative cursor-pointer group overflow-hidden">
+                <img class="rounded-[24px]" src="./assets/images/png/app-section-img-6.png" alt="app-section-img-1">
+                <div
+                    class="w-full rounded-b-[24px] bg-[#00000080] pl-[36px] py-[18px] md:pt-[24px] md:pb-[35px] absolute -bottom-1/2 group-hover:bottom-0 duration-300 ease-linear">
+                    <h4 class="font-bold text-[20px] md:text-[22px] leading-[100%] text-white pb-[6px]">Project
+                        Name</h4>
+                    <p class="font-medium text-[16px] md:text-[18px] leading-[100%] text-white">Launch Date</p>
+                </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Just web support -->
     <section class="flex justify-center items-center bg-[#F5F5F5] py-[40px] sm:py-[80px] md:pt-[138px] md:pb-[151px]">
         <div class="container px-[12px] max-w-[1377px]">
@@ -632,8 +671,8 @@
                             <button onclick="toggleAccordion(this)"
                                 class="w-full flex justify-between cursor-pointer items-center text-start font-medium text-black text-[18px] leading-[100%] accordin-button">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
-                                <span><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                <span><svg class="rotate-icon transition-transform duration-300" width="25" height="25"
+                                        viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.5 19.2695L13.3828 18.3867L20.8828 10.8867L21.7695 10L20 8.23047L19.1172 9.11328L12.5 15.7305L5.88281 9.11719L5 8.23047L3.23047 10L4.11328 10.8828L11.6133 18.3828L12.5 19.2695Z"
                                             fill="black" />
@@ -651,8 +690,8 @@
                             <button onclick="toggleAccordion(this)"
                                 class="w-full flex justify-between cursor-pointer items-center text-start font-medium text-black text-[18px] leading-[100%] accordin-button">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
-                                <span><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                <span><svg class="rotate-icon transition-transform duration-300" width="25" height="25"
+                                        viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.5 19.2695L13.3828 18.3867L20.8828 10.8867L21.7695 10L20 8.23047L19.1172 9.11328L12.5 15.7305L5.88281 9.11719L5 8.23047L3.23047 10L4.11328 10.8828L11.6133 18.3828L12.5 19.2695Z"
                                             fill="black" />
@@ -670,8 +709,8 @@
                             <button onclick="toggleAccordion(this)"
                                 class="w-full flex justify-between cursor-pointer items-center text-start font-medium text-black text-[18px] leading-[100%] accordin-button">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
-                                <span><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                <span><svg class="rotate-icon transition-transform duration-300" width="25" height="25"
+                                        viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.5 19.2695L13.3828 18.3867L20.8828 10.8867L21.7695 10L20 8.23047L19.1172 9.11328L12.5 15.7305L5.88281 9.11719L5 8.23047L3.23047 10L4.11328 10.8828L11.6133 18.3828L12.5 19.2695Z"
                                             fill="black" />
@@ -689,8 +728,8 @@
                             <button onclick="toggleAccordion(this)"
                                 class="w-full flex justify-between cursor-pointer items-center text-start font-medium text-black text-[18px] leading-[100%] accordin-button">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
-                                <span><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                <span><svg class="rotate-icon transition-transform duration-300" width="25" height="25"
+                                        viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.5 19.2695L13.3828 18.3867L20.8828 10.8867L21.7695 10L20 8.23047L19.1172 9.11328L12.5 15.7305L5.88281 9.11719L5 8.23047L3.23047 10L4.11328 10.8828L11.6133 18.3828L12.5 19.2695Z"
                                             fill="black" />
@@ -708,8 +747,8 @@
                             <button onclick="toggleAccordion(this)"
                                 class="w-full flex justify-between cursor-pointer items-center text-start font-medium text-black text-[18px] leading-[100%] accordin-button">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
-                                <span><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                <span><svg class="rotate-icon transition-transform duration-300" width="25" height="25"
+                                        viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.5 19.2695L13.3828 18.3867L20.8828 10.8867L21.7695 10L20 8.23047L19.1172 9.11328L12.5 15.7305L5.88281 9.11719L5 8.23047L3.23047 10L4.11328 10.8828L11.6133 18.3828L12.5 19.2695Z"
                                             fill="black" />
@@ -727,8 +766,8 @@
                             <button onclick="toggleAccordion(this)"
                                 class="w-full flex justify-between cursor-pointer items-center text-start font-medium text-black text-[18px] leading-[100%] accordin-button">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
-                                <span><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                <span><svg class="rotate-icon transition-transform duration-300" width="25" height="25"
+                                        viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.5 19.2695L13.3828 18.3867L20.8828 10.8867L21.7695 10L20 8.23047L19.1172 9.11328L12.5 15.7305L5.88281 9.11719L5 8.23047L3.23047 10L4.11328 10.8828L11.6133 18.3828L12.5 19.2695Z"
                                             fill="black" />
@@ -746,8 +785,8 @@
                             <button onclick="toggleAccordion(this)"
                                 class="w-full flex justify-between cursor-pointer items-center text-start font-medium text-black text-[18px] leading-[100%] accordin-button">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
-                                <span><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                <span><svg class="rotate-icon transition-transform duration-300" width="25" height="25"
+                                        viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.5 19.2695L13.3828 18.3867L20.8828 10.8867L21.7695 10L20 8.23047L19.1172 9.11328L12.5 15.7305L5.88281 9.11719L5 8.23047L3.23047 10L4.11328 10.8828L11.6133 18.3828L12.5 19.2695Z"
                                             fill="black" />
@@ -765,8 +804,8 @@
                             <button onclick="toggleAccordion(this)"
                                 class="w-full flex justify-between cursor-pointer items-center text-start font-medium text-black text-[18px] leading-[100%] accordin-button">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
-                                <span><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                <span><svg class="rotate-icon transition-transform duration-300" width="25" height="25"
+                                        viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.5 19.2695L13.3828 18.3867L20.8828 10.8867L21.7695 10L20 8.23047L19.1172 9.11328L12.5 15.7305L5.88281 9.11719L5 8.23047L3.23047 10L4.11328 10.8828L11.6133 18.3828L12.5 19.2695Z"
                                             fill="black" />
@@ -783,7 +822,7 @@
                 </div>
                 <div class="xl:w-1/2 w-full px-[12px]">
                     <div
-                        class="max-w-[726px] bg-white py-[35px] sm:py-[50px] md:pt-[93px] md:pb-[94px] rounded-3xl mx-auto">
+                        class="max-w-[726px] bg-white shadow-[0px_2px_30px_4px_#0000001A] py-[35px] sm:py-[50px] md:pt-[93px] md:pb-[94px] rounded-3xl mx-auto">
                         <img class="mb-[30px] sm:mb-[37px] mx-auto" src="./assets/images/svg/blue-smile-img.svg"
                             alt="blue-smile-img">
                         <p
@@ -821,6 +860,17 @@
             </ul>
         </div>
     </footer>
+
+    <!-- slider link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- js link -->
     <script src="./js/app.js"></script>
 </body>
 
